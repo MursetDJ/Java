@@ -92,7 +92,6 @@ public class ArreglosS {
             int num = sc.nextInt();
             int[] nums = new int[num];
             int postant = 0;
-
             boolean response = false;
             do {
                 System.out.println("Ingrese numero para el arreglo");
