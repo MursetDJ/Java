@@ -107,12 +107,5 @@ public class ChartEjer {
         }
     }
 
-    public static void verificacionEdad() {
-
-    }
-
-    public static void areaPerimetro() {
-
-    }
 
 }
