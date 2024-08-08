@@ -1,5 +1,6 @@
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ActividadIntegradora {
@@ -9,7 +10,15 @@ public class ActividadIntegradora {
     }
 
     public static void trabajo() {
+        try {
+            //No funciono como debia    
+            Scanner sc = new Scanner(System.in);
+            sc.nextLine();
+        } catch (InputMismatchException e) {
+            //Imprimir el error
+            System.out.println(e.getMessage());
 
+        }
         try (Scanner sc = new Scanner(System.in)) {
             String oracion = "";
             String[] palabras = new String[0];
@@ -89,6 +98,10 @@ public class ActividadIntegradora {
         Scanner sc = new Scanner(System.in);
         System.out.println("Que oración quieres crear?");
         String or = sc.nextLine();
+        System.out.println("Que oración quieres crear?");
+        String or2 = sc.nextLine();
+
+        or = or + ", " + or2;
         System.out.println("La frase es: " + or);
         return or;
     }
